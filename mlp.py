@@ -81,17 +81,9 @@ class MLP:
 				xs,ys = shuff(xs,ys,random_state=0)
 			for i in range(0, len(ys), step_size):
 				if self.task == 'classification':
-					self.params = MLP.classification_update(self.params,
-										 	 				xs[i:i+step_size],
-										 	 				ys[i:i+step_size],
-										 	 				learning_rate,
-										 	 				weight_decay)
+					self.params = MLP.classification_update(self.params,xs[i:i+step_size],ys[i:i+step_size],learning_rate,weight_decay)
 				else:
-					 self.params = MLP.regression_update(self.params,
-										 	 			 xs[i:i+step_size],
-										 	 			 ys[i:i+step_size],
-										 	 			 learning_rate,
-										 	 			 weight_decay)	 
+					 self.params = MLP.regression_update(self.params,xs[i:i+step_size],ys[i:i+step_size],learning_rate,weight_decay)	 
 				
 	def accuracy(self, xs, ys):
 		if self.task == 'classification':
