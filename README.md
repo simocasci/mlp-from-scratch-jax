@@ -11,3 +11,8 @@ The main upside of using JAX is that it makes computations pretty fast thanks to
 ### Contribute
 
 If you are willing to spend some time playing with matrices, fell free to contribute adding more features.
+
+### Dependencies
+
+- JAX
+- Sklearn (only to shuffle data) using `sklearn.utils.shuffle`
