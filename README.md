@@ -15,4 +15,4 @@ If you are willing to spend some time playing with matrices, fell free to contri
 ### Dependencies
 
 - JAX
-- Sklearn (only to shuffle data) using `sklearn.utils.shuffle`
+- Sklearn (only to shuffle data through `sklearn.utils.shuffle`)
